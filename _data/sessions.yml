@@ -227,6 +227,10 @@ day2:
     start: 1:30 PM
     talks:
       - authors:
+          - Nenad Milošević (Università della Svizzera italiana (USI)); Robert Soulé (Yale
+            University); Fernando Pedone (Università della Svizzera italiana (USI))
+        title: The case for synchronous distributed protocols in public clouds
+      - authors:
           - Haoyu Li, Jingkai Fu (Columbia University); Qing Li, Windsor Hsu (Alibaba Cloud);
             Asaf Cidon (Columbia University)
         title:
@@ -254,10 +258,6 @@ day2:
             Muhammad Shahzad (Department of Computer Science, North Carolina State University,
             Raleigh, NC, USA); Guyue (Grace) Liu (Peking University)
         title: "Orcas: A DAG-based Consensus Approach with Linear Communication Overhead"
-      - authors:
-          - Nenad Milošević (Università della Svizzera italiana (USI)); Robert Soulé (Yale
-            University); Fernando Pedone (Università della Svizzera italiana (USI))
-        title: The case for synchronous distributed protocols in public clouds
       - authors:
           - Davide Rovelli (Università della Svizzera Italiana, SAP SE); Christian Faerber,
             Graham McKenzie (Altera); Ali Pahlevan (SAP SE); Sina Darabi (Università della
