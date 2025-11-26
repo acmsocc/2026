@@ -2,7 +2,7 @@
 
 *** Currently cloned from socc2025 ***
 
-Live site at http://acmsocc.org/2025. This is published automatically with every push to the repo.
+Live site at http://acmsocc.org/2026. This is published automatically with every push to the repo.
 If you want to disable the site until the next push, in GitHub go to Settings -> Github pages -> Unpublish.
 
 This repository is public, and the website is based on the jekyll static site generator.
