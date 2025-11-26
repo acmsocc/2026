@@ -1,6 +1,6 @@
 # SoCC 2025 Website
 
-*** Currently cloned from socc2024 ***
+*** Currently cloned from socc2025 ***
 
 Live site at http://acmsocc.org/2025. This is published automatically with every push to the repo.
 If you want to disable the site until the next push, in GitHub go to Settings -> Github pages -> Unpublish.
@@ -28,12 +28,9 @@ If you don't have git installed in your computer, please follow the instructions
 
 From your unix terminal window use the following command to check out the repository
 
-> git clone https://github.com/acmsocc/2024.git
+> git clone https://github.com/acmsocc/2026.git
 
-A directory called 2024 will be created which houses the repository. The repository might not contain any code since it is the master. You need to check out the branch called gh-pages. 
-For checking out the branch, use the following
-
-> git checkout gh-pages
+A directory called 2026 will be created which houses the repository. 
 
 ### Step 5: Edit the repository
 
