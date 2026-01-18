@@ -1,77 +1,272 @@
+- name: Walid Abdelrahman Hanafy
+  inst: University of Massachusetts Amherst
+- name: Orna Agmon Ben-Yehuda
+  inst: Nextsilicon and University of Haifa (CRI)
+- name: Hadeel Albahar
+  inst: Kuwait University
+- name: Ahmed Ali-Eldin Hassan
+  inst: ahmed.hassan@chalmers.se
+- name: Mohammad Javad Amiri
+  inst: Stony Brook University
+- name: Vaastav Anand
+  inst: Max Planck Institute for Software Systems (MPI-SWS)
 - name: Antonio Barbalace
   inst: University of Edinburgh
 - name: Noman Bashir
-- name: Johes Bater
-- name: Orna Agmon Ben-Yehuda
-- name: Achilles Benetopoulos
+  inst: MIT
 - name: David Bermbach
+  inst: TU Berlin
 - name: Vivek Bhasi
+  inst: "Assistant Professor at BITS Pilani, Dubai Campus"
 - name: Daniel Bittman
-- name: Ali R. Butt
-- name: Abhishek Chandra
+  inst: Elephance Memory
+- name: Philippe Bonnet
+  inst: University of Copenhagen
+- name: Rodrigo Bruno
+  inst: "INESC-ID, Instituto Superior Técnico, University of Lisbon"
+- name: Aleksey Charapko
+  inst: University of New Hampshire
 - name: Haoxian Chen
-- name: Yihua Cheng
+  inst: Chen
+- name: Qi Chen
+  inst: Microsoft Research Asia
 - name: Yue Cheng
+  inst: University of Virginia
 - name: Marcin Copik
+  inst: ETH Zürich
+- name: Jonas Dann
+  inst: ETH Zurich
 - name: Pamela Delgado
+  inst: HES-SO
 - name: Peter Desnoyers
-- name: Hakan Ferhatosmanoglu
-- name: Dimitra Giantsidi
-- name: Rajiv Gupta
-- name: Ali Hadian
-- name: Jelle Hellings
+  inst: Northeastern University
+- name: Dong Du
+  inst: Shanghai Jiao Tong University
+- name: Patrick Eugster
+  inst: Università della Svizzera italiana
+- name: Hua Fan
+  inst: Alibaba Group
+- name: Clement Fung
+  inst: Carnegie Mellon University
+- name: Rohan Gandhi
+  inst: "Microsoft Research, India"
+- name: Gerasimos Gerogiannis
+  inst: University of Illinois at Urbana-Champaign
+- name: Adwait Godbole
+  inst: "University of California, Berkeley"
+- name: Bingsheng He
+  inst: National University of Singapore
+- name: Liting Hu
+  inst: UC Santa Cruz
 - name: Yu Hua
-- name: Lexiang Huang
+  inst: Huazhong University of Science and Technology
+- name: Kaisong Huang
+  inst: University of Calgary
+- name: David Irwin
+  inst: University of Massachusetts Amherst
+- name: Arno Jacobsen
+  inst: University of Toronto
 - name: Pooyan Jamshidi
+  inst: University of South Carolina
 - name: Zbigniew Kalbarczyk
-- name: Evangelia Kalyvianaki
-- name: Nikhil Karra
+  inst: University of Illinois at Urbana-Champaign
+- name: Eva Kalyvianaki
+  inst: University of Cambridge
+- name: Eric Keller
+  inst: "University of Colorado, Boulder"
+- name: Atsushi Koshiba
+  inst: TU Munich
+- name: Purushottam Kulkarni
+  inst: Indian Institute of Technology Bombay
 - name: Rodrigo Laigner
-- name: Quoc Do Le
+  inst: University of Copenhagen
 - name: Sekwon Lee
-- name: Chieh-Jan Mike Liang
+  inst: HPE Labs
+- name: Philipp Leitner
+  inst: Chalmers University of Technology
+- name: Zhenhua Li
+  inst: Tsinghua University
 - name: Jiaxin Lin
-- name: Xin Liu
-- name: Fangming Liu
-- name: Eric Lo
-- name: Tao Luo
-- name: Luo Mai
+  inst: Cornell University
+- name: Xinshu Ma
+  inst: University of Edinburgh
+- name: Rohan Mahapatra
+  inst: Microsoft Azure Research
+- name: Ankur Mallick
+  inst: Microsoft
+- name: Norman May
+  inst: SAP SE
 - name: Pankaj Mehra
+  inst: Ohio State University & Elephance Memory
+- name: Ayush Mishra
+  inst: ETH Zurich
 - name: Debadatta Mishra
+  inst: Indian Institute of Technology Kanpur
 - name: Masanori Misono
-- name: George Neville-Neil
+  inst: TU Munich
+- name: Chandra Narayanaswami
+  inst: IBM Research
+- name: Jianyu Niu
+  inst: City University of Hong Kong
+- name: Fernando Pedone
+  inst: Università della Svizzera italiana (USI)
 - name: Javier Picorel
-- name: Anthony Rebello
+  inst: Huawei Technologies
+- name: Devashish Purandare
+  inst: Microsoft
+- name: Francesco Quaglia
+  inst: University of Rome Tor Vergata
+- name: Binoy Ravindran
+  inst: Virginia Tech
 - name: Francisco Romero
-- name: Rohan Basu Roy
+  inst: Georgia Institute of Technology
+- name: Fabian Ruffy
+  inst: Xsight Labs
+- name: Sultan Mahmud Sajal
+  inst: "Meta Platforms, Inc."
 - name: Divyanshu Saxena
-- name: David Schall
-- name: Valerio Schiavoni
+  inst: The University of Texas at Austin
+- name: Mohammad Shahrad
+  inst: University of British Columbia
+- name: Haiying Shen
+  inst: University of Virginia
+- name: Ji-Yong Shin
+  inst: Northeastern University
 - name: Takahiro Shinagawa
+  inst: The University of Tokyo
+- name: Ran Shu
+  inst: Microsoft Research
 - name: Gagan Somashekar
+  inst: Microsoft
 - name: Abel Souza
-- name: Shuwen Sun
+  inst: UC Santa Cruz
+- name: Gaël Thomas
+  inst: Inria
 - name: Lewis Tseng
-- name: Bhuvan Urgaonkar
-- name: Kapil Eknath Vaidya
+  inst: UMass Lowell
+- name: Keval Vora
+  inst: Simon Fraser University
 - name: Hao Wang
+  inst: Stevens Institute of Technology
+- name: Jianguo Wang
+  inst: Purdue University
 - name: Lin Wang
+  inst: Paderborn University
+- name: Wei Wang
+  inst: HKUST
+- name: Weiyang Wang
+  inst: Massachusetts Institute of Technology
 - name: Zhijun Wang
-- name: Yawen Wang
-- name: Wolfram Wingerath
+  inst: The University of Texas at Arlington
+- name: Bernard Wong
+  inst: University of Waterloo
 - name: Chenyuan Wu
-- name: Peizhi Wu
+  inst: City University of Hong Kong
+- name: Chuan Wu
+  inst: The University of Hong Kong
+- name: Jie Wu
+  inst: China Telecom
+- name: Dong Xie
+  inst: Penn State University
 - name: Minghao Xie
-- name: Tong Xing
-- name: Yi Xu
+  inst: Anyscale
+- name: Hong Xu
+  inst: CUHK
+- name: Huanle Xu
+  inst: University of Macau
+- name: Ming-Chang Yang
+  inst: The Chinese University of Hong Kong
 - name: Xizhe Yin
+  inst: Siemens EDA
 - name: Eiko Yoneki
+  inst: University of Cambridge
 - name: Lei Yu
-- name: Liangcheng Yu
-- name: Chao Zhang
+  inst: Rensselaer Polytechnic Institute
+- name: Weikuan Yu
+  inst: Florida State University
 - name: Shungeng Zhang
-- name: Minjia Zhang
+  inst: Augusta University
 - name: Zhijia Zhao
-- name: Yongluan Zhou
+  inst: "University of California, Riverside"
+- name: Jiaqi Zheng
+  inst: Nanjing University
 - name: Timothy Zhu
-- name: Yiwen Zhu
+  inst: The Pennsylvania State University
+
+# - name: Antonio Barbalace
+#   inst: University of Edinburgh
+# - name: Noman Bashir
+# - name: Johes Bater
+# - name: Orna Agmon Ben-Yehuda
+# - name: Achilles Benetopoulos
+# - name: David Bermbach
+# - name: Vivek Bhasi
+# - name: Daniel Bittman
+# - name: Ali R. Butt
+# - name: Abhishek Chandra
+# - name: Haoxian Chen
+# - name: Yihua Cheng
+# - name: Yue Cheng
+# - name: Marcin Copik
+# - name: Pamela Delgado
+# - name: Peter Desnoyers
+# - name: Hakan Ferhatosmanoglu
+# - name: Dimitra Giantsidi
+# - name: Rajiv Gupta
+# - name: Ali Hadian
+# - name: Jelle Hellings
+# - name: Yu Hua
+# - name: Lexiang Huang
+# - name: Pooyan Jamshidi
+# - name: Zbigniew Kalbarczyk
+# - name: Evangelia Kalyvianaki
+# - name: Nikhil Karra
+# - name: Rodrigo Laigner
+# - name: Quoc Do Le
+# - name: Sekwon Lee
+# - name: Chieh-Jan Mike Liang
+# - name: Jiaxin Lin
+# - name: Xin Liu
+# - name: Fangming Liu
+# - name: Eric Lo
+# - name: Tao Luo
+# - name: Luo Mai
+# - name: Pankaj Mehra
+# - name: Debadatta Mishra
+# - name: Masanori Misono
+# - name: George Neville-Neil
+# - name: Javier Picorel
+# - name: Anthony Rebello
+# - name: Francisco Romero
+# - name: Rohan Basu Roy
+# - name: Divyanshu Saxena
+# - name: David Schall
+# - name: Valerio Schiavoni
+# - name: Takahiro Shinagawa
+# - name: Gagan Somashekar
+# - name: Abel Souza
+# - name: Shuwen Sun
+# - name: Lewis Tseng
+# - name: Bhuvan Urgaonkar
+# - name: Kapil Eknath Vaidya
+# - name: Hao Wang
+# - name: Lin Wang
+# - name: Zhijun Wang
+# - name: Yawen Wang
+# - name: Wolfram Wingerath
+# - name: Chenyuan Wu
+# - name: Peizhi Wu
+# - name: Minghao Xie
+# - name: Tong Xing
+# - name: Yi Xu
+# - name: Xizhe Yin
+# - name: Eiko Yoneki
+# - name: Lei Yu
+# - name: Liangcheng Yu
+# - name: Chao Zhang
+# - name: Shungeng Zhang
+# - name: Minjia Zhang
+# - name: Zhijia Zhao
+# - name: Yongluan Zhou
+# - name: Timothy Zhu
+# - name: Yiwen Zhu
