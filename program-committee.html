@@ -41,7 +41,21 @@ href="https://rmarcus.info/blog/">Ryan Marcus</a></header>
             <header> <h2 class="no-divider">Program committee</h2></header>
             <div class="row">
 
+                {% assign sorted_keys = "" | split: "," %}
                 {% for member in site.data.committee %}
+                  {% assign name_clean = member.name | replace: " *", "" %}
+                  {% assign name_parts = name_clean | split: " " %}
+                  {% assign last_name = name_parts | last %}
+                  {% assign sort_key = last_name | append: "||" | append: member.name %}
+                  {% assign sorted_keys = sorted_keys | push: sort_key %}
+                {% endfor %}
+                
+                {% assign sorted_keys = sorted_keys | sort %}
+                
+                {% for sort_key in sorted_keys %}
+                  {% assign original_name = sort_key | split: "||" | last %}
+                  {% for member in site.data.committee %}
+                    {% if member.name == original_name %}
                 <div class="col-md-6">
                   <div class="author-block course-speaker" style="padding:0; margin:0; border-bottom:none;">
                     <article class="paragraph-wrapper" style="padding-left:0;">
@@ -60,7 +74,10 @@ href="https://rmarcus.info/blog/">Ryan Marcus</a></header>
                     </article>
                   </div>
                 </div>
-                {% endfor %}               
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
 
             </div>
         </section> 
