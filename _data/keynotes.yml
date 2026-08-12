@@ -1,3 +1,16 @@
+hellerstein:
+    name: 'Joseph M. Hellerstein (UC Berkeley and AWS)'
+    title: 'From Heisenbugs to Determination: Foundations for Distributed Safety'
+    abstract: "We are entering an era in which the software we depend on is increasingly distributed, just as AI coding agents are making software generation dramatically easier than software assurance. This raises the stakes for making distributed systems trustworthy.
+
+        Distributed systems bring unique challenges because they are rife with nondeterminism. Messages race, retries duplicate work, failures expose unexpected interleavings, and programs that pass thousands of tests can still harbor Heisenbugs that appear only in production. We currently address these problems with a hodgepodge of seemingly disparate ideas: consistency and isolation levels, coordination protocols, type systems, model checking and fuzz testing.
+
+        I will argue that these all address a common formal core: determination. Many distributed computations are not simply computing a function; they must choose among multiple admissible outcomes. Determination is the process by which a system irrevocably rules out possible futures in order to make a choice. Determination Theory studies this process directly from a system's specification. At its coordination-free boundary, it yields complete generalizations of two familiar results: CALM, characterizing exactly when coordination is unnecessary, and CAP, characterizing when required coordination becomes incompatible with availability under partitions. Beyond that boundary, the theory measures the irreducible sequential depth of determination work and provides a framework for explaining which commitments determined an observed result.
+
+        The goal, however, is not theory for its own sake. We are bringing these ideas into Hydro, an open-source Rust framework for distributed systems. Hydro's type system already catches broad classes of nondeterministic distributed behavior at compile time. For properties that cannot be checked at compile time, the semantics of the type system inform Hydro's built-in model checker, allowing it to skip enormous regions of the execution search space whose behaviors are guaranteed equivalent by the types. The same semantics also enable analysis of the consistency properties of observable program outputs.
+
+        In the talk I will develop these ideas through familiar cloud systems examples and show how a foundational theory of distributed choice can translate into practical tools for building systems that avoid Heisenbugs and use no more coordination than they actually need."
+
 irene:
     name: 'Irene Zhang (MSR)'
     title: 'Demikernel and the Future of Datacenter Operating Systems'
