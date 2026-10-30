@@ -1,0 +1,91 @@
+<style>
+/* Scoped styles for the SoCC program pages (program-overview / program-papers).
+   Every selector is prefixed with .socc-program so the site's global
+   bootstrap.css / style.css cannot clobber the program grid, and the
+   program's own element rules (body, footer, section) cannot clobber the
+   site chrome. */
+.socc-program {
+  --ink: #1d2733; --muted: #5c6b7a; --line: #d9e0e7; --bg: #f5f7fa;
+  --accent: #0b5c8a; --accent-soft: #e6f0f7;
+  --track-a: #0b5c8a; --track-b: #8a3b0b;
+  --break: #f0f2f5; --keynote: #fff6df; --social: #eef7ee;
+  background: var(--bg); color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.socc-program * { box-sizing: border-box; }
+.socc-program .wrap { max-width: 1280px; margin: 0 auto; padding: 24px 20px 64px; }
+.socc-program header.page h1 { margin: 0 0 4px; font-size: 28px; color: var(--ink); }
+.socc-program header.page .sub { color: var(--muted); margin: 0; }
+.socc-program header.page .note { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
+.socc-program header.page .note a { color: var(--accent); }
+.socc-program nav.days { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; padding: 0; }
+.socc-program nav.days a {
+  text-decoration: none; color: var(--accent); background: #fff; border: 1px solid var(--line);
+  padding: 6px 12px; border-radius: 999px; font-size: 14px;
+}
+.socc-program nav.days a:hover { background: var(--accent-soft); }
+.socc-program section.day { margin-top: 36px; }
+.socc-program section.day > h2 {
+  font-size: 20px; margin: 0 0 12px; padding-bottom: 6px; border-bottom: 2px solid var(--accent); color: var(--ink);
+}
+.socc-program .grid { background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.socc-program .row { display: grid; grid-template-columns: 120px 1fr 1fr; border-top: 1px solid var(--line); margin: 0; }
+/* Kill bootstrap.css's clearfix (.row:before/:after { content:" "; display:table }):
+   inside a grid container those pseudo-elements become extra grid cells and shift
+   every real cell one column to the right, leaving the Time column empty. */
+.socc-program .row::before, .socc-program .row::after { content: none; display: none; }
+.socc-program .row:first-child { border-top: 0; }
+.socc-program .row.head { background: #fafbfc; font-size: 13px; font-weight: 600; color: var(--muted); }
+.socc-program .row.head > div { padding: 8px 14px; }
+.socc-program .time { padding: 12px 14px; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.socc-program .span { grid-column: 2 / 4; padding: 12px 14px; }
+.socc-program .row.break { background: var(--break); color: var(--muted); }
+.socc-program .row.break .time, .socc-program .row.break .span { padding-top: 7px; padding-bottom: 7px; font-weight: 400; }
+.socc-program .row.keynote { background: var(--keynote); }
+.socc-program .row.social { background: var(--social); }
+.socc-program .row.plenary .span strong, .socc-program .row.keynote .span strong, .socc-program .row.social .span strong { font-size: 16px; }
+.socc-program .span .detail { color: var(--muted); margin-left: 8px; }
+.socc-program .cell { padding: 12px 14px; border-left: 1px solid var(--line); }
+.socc-program .track-label { font-size: 12px; font-weight: 600; letter-spacing: .02em; text-transform: uppercase; }
+.socc-program .cell.A .track-label { color: var(--track-a); }
+.socc-program .cell.B .track-label { color: var(--track-b); }
+.socc-program .cell.A { border-top: 3px solid var(--track-a); }
+.socc-program .cell.B { border-top: 3px solid var(--track-b); }
+.socc-program .session-title { font-size: 16px; font-weight: 700; margin: 2px 0 2px; }
+.socc-program .session-title a { color: inherit; text-decoration: none; }
+.socc-program .session-title a:hover { color: var(--accent); text-decoration: underline; }
+.socc-program .session-meta { font-size: 13px; color: var(--muted); }
+.socc-program ol.papers { list-style: none; margin: 10px 0 0; padding: 0; }
+.socc-program ol.papers li { padding: 9px 0; border-top: 1px dashed var(--line); display: grid; grid-template-columns: 48px 1fr; gap: 0 8px; }
+.socc-program ol.papers li:first-child { border-top: 0; }
+.socc-program .ptime { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 1px; }
+.socc-program .ptitle { font-weight: 600; }
+.socc-program .authors { font-style: italic; color: #34414e; font-size: 14px; margin-top: 2px; }
+.socc-program .badge {
+  display: inline-block; font-size: 11px; font-weight: 600; font-style: normal; text-transform: uppercase;
+  letter-spacing: .03em; padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: 1px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.socc-program .badge.Industry { background: #f3e8fb; color: #6a2c91; }
+.socc-program .badge.Vision { background: #fdeee4; color: #9a4a12; }
+.socc-program .badge.Sponsored { background: #fff1c2; color: #7a5300; border: 1px solid #e8c766; }
+.socc-program .badge.Sponsored.first { margin-left: 0; margin-right: 8px; }
+.socc-program ol.papers li.sponsored { background: #fffaea; border-radius: 6px; padding-left: 6px; padding-right: 6px; }
+.socc-program .legend { font-size: 13px; color: var(--muted); margin-top: 10px; }
+.socc-program footer { margin-top: 40px; font-size: 13px; color: var(--muted); }
+@media (max-width: 820px) {
+  .socc-program .row { grid-template-columns: 1fr; }
+  .socc-program .row.head { display: none; }
+  .socc-program .time { padding-bottom: 0; }
+  .socc-program .span { grid-column: 1; }
+  .socc-program .cell { border-left: 0; }
+  .socc-program .row.break .time { padding-bottom: 0; }
+}
+@media print {
+  .socc-program { background: #fff; }
+  .socc-program nav.days { display: none; }
+  .socc-program section.day { break-before: page; }
+  .socc-program section.day:first-of-type { break-before: auto; }
+  .socc-program .row { break-inside: avoid; }
+}
+</style>
