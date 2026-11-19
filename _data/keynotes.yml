@@ -21,6 +21,7 @@ hellerstein:
         The goal, however, is not theory for its own sake. We are bringing these ideas into Hydro, an open-source Rust framework for distributed systems. Hydro's type system already catches broad classes of nondeterministic distributed behavior at compile time. For properties that cannot be checked at compile time, the semantics of the type system inform Hydro's built-in model checker, allowing it to skip enormous regions of the execution search space whose behaviors are guaranteed equivalent by the types. The same semantics also enable analysis of the consistency properties of observable program outputs.
 
         In the talk I will develop these ideas through familiar cloud systems examples and show how a foundational theory of distributed choice can translate into practical tools for building systems that avoid Heisenbugs and use no more coordination than they actually need."
+    bio1: "Joseph M. Hellerstein is the Jim Gray Professor of the Graduate School at UC Berkeley, and a VP/Distinguished Scientist at Amazon Web Services where he leads the Hydro open source project that began at Berkeley. His research focuses broadly on data-oriented systems and the way they drive computing. This spans topics in database systems, distributed computing, programming languages and AI. Hellerstein is an ACM-SIGMOD Codd Award winner and a Fellow of the ACM. His industry work prior to AWS includes co-founding multiple startups and leading industrial research teams."
 
 irene:
     name: 'Irene Zhang (MSR)'
